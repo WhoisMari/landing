@@ -1,0 +1,128 @@
+body {
+	font-family: Overpass;
+	color: #006269;
+	font-size: 18px;
+	margin: 0;
+}
+
+	h1, h2, h3 {
+		font-family: Chivo;
+	}
+
+	.banner {
+		background-image: url(https://www.pointbleudesign.com/wp-content/uploads/2019/09/European-Specialty-Coffee-Market-by-Pointbleu-Design-Blog.jpg);
+		background-size: cover;
+		padding: 120px 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		h1 {
+			margin: 0;
+			font-size: 45px;
+			color: #fff	;
+		}
+
+		p {
+			color: #ccc;
+			font-size: 20px;
+		}
+	}
+
+	.container {
+		width: 900px;
+		margin: 60px auto;
+		.wrap-cards {
+			display: flex;
+			justify-content: space-between;
+
+			.card-white {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				background: white;
+				box-shadow: 0 0 16px rgba(0,0,0,0.1);
+				border-radius: 4px;
+				padding: 30px;
+				width: 210px;
+
+				img {
+					width: 100%;
+					height: 180px;
+					object-fit: cover;
+					border-radius: 4px;
+				}
+
+				h3 {
+					margin: 16px 0;
+				}
+
+				.primary-btn {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	a {text-decoration: none;}
+	a:hover{text-decoration: none;}
+
+	.primary-btn {
+		color: #e8a72b;
+		font-weight: bold;
+		text-decoration: none;
+		transition: .3s;
+		border: 1px solid #e8a72b;
+		padding: 13px;
+		border-radius: 4px;
+
+		&:hover {
+			color: #c5860e;
+			background-color: #e8dcb8;
+		}
+	}
+
+	.footer {
+		background-color: #004f52;
+		color: #fff;
+		padding: 20px;
+		margin-top: 25px;
+		display: flex;
+		justify-content: center;
+	}
+
+	@media (max-width: 980px) {
+		.container {
+			width: auto;
+		}
+	}
+
+	@media (max-width: 850px) {
+		.container {
+			width: auto;
+
+			.wrap-cards {
+				flex: none;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 16px;
+			}
+		}
+	}
+
+	@media (max-width: 600px) {
+		.container {
+			width: auto;
+			text-align: center;
+		
+			.wrap-cards {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+	
+				.card-white {
+					margin: 20px 0px 20px 0px;
+				}
+			}
+		}
+	}
